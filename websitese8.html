@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head><title>Clifford Algebras</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (http://www.tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link type='text/css' rel='stylesheet' href='website.css' /> 
+<meta content='website.tex' name='src' /> 
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=MML_HTMLorMML' type='text/javascript'></script>  
+<link type='text/css' rel='stylesheet' href='css/custom.css' /></head> 
+<body><div class='header'><p><a href='https://soneralbayrak.com/'>S.Albayrak</a> <a href='https://soneralbayrak.com/academictrivia'>Anasayfa</a> <a href='https://soneralbayrak.com/academictrivia/websiteli2.html'>Kategoriler</a></p></div> 
+   <!-- l. 219 --><div class='crosslinks'><p class='noindent'>[<a href='websiteli2.html'>next</a>] [<a href='websitese7.html'>prev</a>] [<a href='websitese7.html#tailwebsitese7.html'>prev-tail</a>] [<a href='#tailwebsitese8.html'>tail</a>] [<a href='websitech3.html#websitese8.html'>up</a>] </p></div>
+   <h3 class='sectionHead'><span class='titlemark'>3.3   </span> <a id='x13-130003.3'></a>Clifford Algebras</h3>
+   <div class='sectionTOCS'>
+   </div>
+<!-- l. 220 --><p class='noindent'><span class='paragraphHead'><a id='x13-140003.3'></a>In 1106.3197 conventions:</span>
+   In Euclidean signature, we can generate
+<!-- l. 221 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>γ</mi></math>
+matrices via the Mathematica code:
+                                                                         
+
+                                                                         
+</p>
+   <div class='verbatim' id='verbatim-1'>
+ClearAll[cliffordGenerators];
+ <br />cliffordGenerators[1] = {PauliMatrix[1]};
+ <br />cliffordGenerators[2] = {PauliMatrix[1], PauliMatrix[2]};
+ <br />cliffordGenerators[3] = {PauliMatrix[1], PauliMatrix[2], PauliMatrix[3]};
+ <br />cliffordGenerators[4] = Join[
+ <br />TensorProduct[PauliMatrix[1], #] &amp; /@ cliffordGenerators[3],
+ <br />{TensorProduct[PauliMatrix[2], IdentityMatrix[2]]},
+ <br />{TensorProduct[PauliMatrix[3], IdentityMatrix[2]]}
+ <br />];
+ <br />
+ <br />cliffordGenerators[n_?EvenQ] /; n &gt; 3 := cliffordGenerators[n] = Join[
+ <br />(TensorProduct[PauliMatrix[1], #] &amp; /@ cliffordGenerators[n - 2]),
+ <br />{TensorProduct[PauliMatrix[2], Nest[TensorProduct[IdentityMatrix[2], #] &amp;,
+ <br />IdentityMatrix[2], n/2 - 2]]}, {TensorProduct[PauliMatrix[3],
+ <br />Nest[TensorProduct[IdentityMatrix[2], #] &amp;, IdentityMatrix[2], n/2 - 2]]}
+ <br />];
+</div>
+<!-- l. 239 --><p class='nopar'>
+</p>
+<!-- l. 241 --><p class='noindent'><span class='paragraphHead'><a id='x13-150003.3'></a>In the conventions of “Park, Jeong - Hyuck.(2016).Lecture Note on Clifford
+Algebra : Expanded version”</span>
+   In this convention, gamma matrices can be generated as
+                                                                         
+
+                                                                         
+</p>
+   <div class='verbatim' id='verbatim-2'>
+ClearAll[\[Gamma]];
+ <br />\[Gamma][2, 1] = PauliMatrix[1]; \[Gamma][2, 2] = PauliMatrix[2];
+ <br />\[Gamma][d_?EvenQ, i_] /; i &lt;= d - 2 := ArrayFlatten[TensorProduct[
+ <br />\[Gamma][d - 2, i], PauliMatrix[1]]];
+ <br />\[Gamma][d_?EvenQ, i_] /; d - i == 1 := ArrayFlatten[TensorProduct[
+ <br />IdentityMatrix[2^((d - 2)/2)], PauliMatrix[2]]];
+ <br />\[Gamma][d_?EvenQ, i_] /; d - i == 0 := ArrayFlatten[TensorProduct[
+ <br />IdentityMatrix[2^((d - 2)/2)], PauliMatrix[3]]];
+ <br />
+ <br />ClearAll[\[CapitalGamma]];
+ <br />\[CapitalGamma][d_?EvenQ] := IdentityMatrix[2^(d/2)];
+ <br />\[CapitalGamma][d_?EvenQ, j__] /; Apply[And, 1 &lt;= # &lt;= d &amp; /@ {j}] := Block[
+ <br />{permutations, signatures},{permutations, signatures} = Transpose[{#,
+ <br /> Signature[#]} &amp; /@ Permutations[{j}]];
+ <br />Signature[{j}]/Length[signatures] signatures.(Apply[Dot,
+ <br /> Table[\[Gamma][d, i], {i, #}]] &amp; /@ permutations)];
+</div>
+<!-- l. 259 --><p class='nopar'>
+                                                                         
+
+                                                                         
+                                                                         
+
+                                                                         
+</p>
+   <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='websiteli2.html'>next</a>] [<a href='websitese7.html'>prev</a>] [<a href='websitese7.html#tailwebsitese7.html'>prev-tail</a>] [<a href='websitese8.html'>front</a>] [<a href='websitech3.html#websitese8.html'>up</a>] </p></div>
+<!-- l. 1 --><p class='indent'>   <a id='tailwebsitese8.html'></a>  </p> 
+<div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
+ 
+</body>  
+</html>
