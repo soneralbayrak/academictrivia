@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang='en-US' xml:lang='en-US'> 
-<head><title>Clifford Algebras</title> 
+<head><title>Haskell as category</title> 
 <meta charset='utf-8' /> 
 <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
 <meta content='width=device-width,initial-scale=1' name='viewport' /> 
@@ -9,73 +9,64 @@
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
 <link href='css/custom.css' rel='stylesheet' type='text/css' /></head> 
 <body><div class='header'><p><a href='https://soneralbayrak.com/'>S.Albayrak</a> <a href='https://soneralbayrak.com/academictrivia'>Anasayfa</a> <a href='https://soneralbayrak.com/academictrivia/websiteli2.html'>Kategoriler</a></p></div> 
-   <!-- l. 38 --><div class='crosslinks'><p class='noindent'>[<a href='websiteli2.html'>next</a>] [<a href='websitese7.html'>prev</a>] [<a href='websitese7.html#tailwebsitese7.html'>prev-tail</a>] [<a href='#tailwebsitese8.html'>tail</a>] [<a href='websitech3.html#websitese8.html'>up</a>] </p></div>
-   <h3 class='sectionHead' id='clifford-algebras'><span class='titlemark'>3.3   </span> <a id='x13-180003.3'></a>Clifford Algebras</h3>
+   <!-- l. 105 --><div class='crosslinks'><p class='noindent'>[<a href='websitech4.html'>next</a>] [<a href='websitese7.html'>prev</a>] [<a href='websitese7.html#tailwebsitese7.html'>prev-tail</a>] [<a href='#tailwebsitese8.html'>tail</a>] [<a href='websitech3.html#websitese8.html'>up</a>] </p></div>
+   <h3 class='sectionHead' id='haskell-as-category'><span class='titlemark'>3.3   </span> <a id='x13-190003.3'></a>Haskell as category</h3>
    <div class='sectionTOCS'>
    </div>
-<!-- l. 39 --><p class='noindent'><span class='paragraphHead' id='in-conventions'><a id='x13-190003.3'></a>In 1106.3197 conventions:</span>
-   In Euclidean signature, we can generate
-<!-- l. 40 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>γ</mi></math>
-matrices via the Mathematica code:
+<!-- l. 106 --><p class='indent'>   Let us analyze Haskell from a category theory point of view. We will consider
+two categories:
+</p><!-- tex4ht:inline --><!-- l. 110 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
+                          <mtr><mtd class='align-odd' columnalign='right'><mrow><mi>C</mi> <mo class='MathClass-rel'>=</mo></mrow></mtd>                          <mtd class='align-even'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi mathvariant='italic'>Int</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Bool</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-close' stretchy='false'>}</mo><mspace width='2em'></mspace></mrow></mtd>                                                    <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19001r9'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.9)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+                          </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mi>D</mi> <mo class='MathClass-rel'>=</mo></mrow></mtd>                          <mtd class='align-even'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi mathvariant='italic'>Double</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Bool</mi><mo class='MathClass-close' stretchy='false'>}</mo><mspace width='2em'></mspace></mrow></mtd>                                                      <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19002r10'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.10)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+   </mrow></mtd></mtr></mtable></math>
+<!-- l. 111 --><p class='noindent'>where the objects are standard Haskell types. We can then write
+                                                                         
+
+                                                                         
+</p><!-- tex4ht:inline --><!-- l. 116 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
+   <mtr><mtd class='align-odd' columnalign='right'><mrow><mi mathvariant='italic'>End</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo></mrow></mtd>   <mtd class='align-even'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi mathvariant='italic'>toUpper</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>mirror</mi><mo class='MathClass-punc'>,</mo><mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo><mstyle class='text'><mtext>’a’</mtext></mstyle><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-close' stretchy='false'>}</mo><mspace width='2em'></mspace></mrow></mtd>      <mtd class='align-label' columnalign='right'><mrow>
+<mstyle class='label' id='x13-19003r11'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.11)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+   </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mi mathvariant='italic'>Aut</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo></mrow></mtd>                         <mtd class='align-even'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi mathvariant='italic'>mirror</mi><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-close' stretchy='false'>}</mo><mspace width='2em'></mspace></mrow></mtd>                        <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19004r12'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.12)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+   </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Int</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Bool</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo></mrow></mtd>                    <mtd class='align-even'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi mathvariant='italic'>isLeapY</mi> <mi mathvariant='italic'>ear</mi><mo class='MathClass-punc'>,</mo><mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo> <mi>x</mi> <mo class='MathClass-rel'>&gt;</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-close' stretchy='false'>}</mo><mspace width='2em'></mspace></mrow></mtd>       <mtd class='align-label' columnalign='right'><mrow>
+<mstyle class='label' id='x13-19005r13'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.13)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace></mrow></mtd></mtr></mtable></math>
+<!-- l. 117 --><p class='noindent'>For instance, the function <!-- l. 117 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo> <mi>x</mi> <mo class='MathClass-rel'>&gt;</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Int</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Bool</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+is not an monomorphism, because
+</p><!-- tex4ht:inline --><!-- l. 121 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
+ <mtr><mtd class='align-odd' columnalign='right'><mrow><mi>α</mi> <mo class='MathClass-rel'>=</mo></mrow></mtd>  <mtd class='align-even'><mrow><mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo><mstyle class='text'><mtext>if x is before k in alphabet 5 else 10</mtext></mstyle> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Int</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace width='2em'></mspace></mrow></mtd>  <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19006r14'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.14)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+ </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><msup><mrow><mi>α</mi></mrow><mrow><mi>′</mi></mrow></msup> <mo class='MathClass-rel'>=</mo></mrow></mtd> <mtd class='align-even'><mrow><mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo><mstyle class='text'><mtext>if x is before k in alphabet 7 else 12</mtext></mstyle> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Int</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace width='2em'></mspace></mrow></mtd>  <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19007r15'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.15)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+   </mrow></mtd></mtr></mtable></math>
+<!-- l. 122 --><p class='noindent'>even though <!-- l. 122 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>α</mi><mo class='MathClass-rel'>≠</mo><msup><mrow><mi>α</mi></mrow><mrow><mi>′</mi></mrow></msup></mrow></math>,
+we have
+                                                                         
+
+                                                                         
+</p><!-- tex4ht:inline --><!-- l. 125 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
+                         <mtr><mtd class='align-odd' columnalign='right'><mrow><mi>f</mi><mover accent='true'><mrow><mrow><mi>α</mi></mrow><mo accent='true'>˙</mo></mrow></mover> <mo class='MathClass-rel'>=</mo> <mi>f</mi><msup><mrow><mover accent='true'><mrow><mrow><mi>α</mi></mrow><mo accent='true'>˙</mo></mrow></mover></mrow><mrow><mi>′</mi></mrow></msup> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo> <mi mathvariant='italic'>True</mi></mrow></mtd>                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                         <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19008r16'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.16)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+   </mrow></mtd></mtr></mtable></math>
+<!-- l. 126 --><p class='noindent'>however it is an epimorphism as for any
+<!-- l. 126 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>β</mi></mrow><mrow><mi>i</mi></mrow></msub> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>Bool</mi><mo class='MathClass-punc'>,</mo><mi mathvariant='italic'>Char</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+with
+</p><!-- tex4ht:inline --><!-- l. 130 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
+                    <mtr><mtd class='align-odd' columnalign='right'><mrow><mi>β</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>True</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo> <mi>b</mi><mn>1</mn><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-punc'>,</mo><mspace class='quad' width='1em'></mspace><mi>β</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>False</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo> <mi>b</mi><mn>2</mn></mrow></mtd>                      <mtd class='align-even'><mspace width='2em'></mspace></mtd>                    <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19009r17'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.17)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+                    </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>True</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo> <mi>b</mi><msup><mrow><mn>1</mn></mrow><mrow><mi>′</mi></mrow></msup><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-punc'>,</mo><mspace class='quad' width='1em'></mspace><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>False</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>=</mo> <mi>b</mi><msup><mrow><mn>2</mn></mrow><mrow><mi>′</mi></mrow></msup></mrow></mtd>                    <mtd class='align-even'><mspace width='2em'></mspace></mtd>                    <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19010r18'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.18)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+                    </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'></mtd>                                                   <mtd class='align-even'><mspace width='2em'></mspace></mtd>                    <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19011r19'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.19)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+   </mrow></mtd></mtr></mtable></math>
+<!-- l. 131 --><p class='noindent'><!-- l. 131 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>b</mi><mn>1</mn><mo class='MathClass-punc'>,</mo><mi>b</mi><mn>2</mn><mo class='MathClass-punc'>,</mo><mi>b</mi><msup><mrow><mn>1</mn></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><mi>b</mi><msup><mrow><mn>2</mn></mrow><mrow><mi>′</mi></mrow></msup> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Char</mi></mrow></math>, we
+have
+                                                                         
+
+                                                                         
+</p><!-- tex4ht:inline --><!-- l. 135 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
+                  <mtr><mtd class='align-odd' columnalign='right'><mrow><mi mathvariant='italic'>βḟ</mi> <mo class='MathClass-rel'>=</mo></mrow></mtd>                   <mtd class='align-even'><mrow><mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo><mstyle class='text'><mrow><mtext>if </mtext><mstyle class='math'><mrow><mi>x</mi> <mo class='MathClass-rel'>&gt;</mo> <mn>2</mn></mrow></mstyle><mtext> then b1, else b2</mtext></mrow></mstyle><mspace width='2em'></mspace></mrow></mtd>                                     <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19012r20'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.20)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+                  </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup><mi>ḟ</mi> <mo class='MathClass-rel'>=</mo></mrow></mtd>                  <mtd class='align-even'><mrow><mo class='MathClass-bin'>∖</mo><mi>x</mi> <mo class='MathClass-rel'>→</mo><mstyle class='text'><mrow><mtext>if </mtext><mstyle class='math'><mrow><mi>x</mi> <mo class='MathClass-rel'>&gt;</mo> <mn>2</mn></mrow></mstyle><mtext> then b1’, else b2’</mtext></mrow></mstyle><mspace width='2em'></mspace></mrow></mtd>                                    <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x13-19013r21'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.21)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+   </mrow></mtd></mtr></mtable></math>
+<!-- l. 136 --><p class='noindent'>hence <!-- l. 136 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>β</mi><mo class='MathClass-rel'>≠</mo><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup><mspace class='quad' width='1em'></mspace> <mo class='MathClass-rel'>→</mo><mspace class='quad' width='1em'></mspace><mi>β</mi><mo class='MathClass-punc'>.</mo><mi>f</mi><mo class='MathClass-rel'>≠</mo><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup><mi>ḟ</mi></mrow></math>.
                                                                          
 
                                                                          
 </p>
-   <pre class='verbatim' id='verbatim-1'>
-ClearAll[cliffordGenerators];
-cliffordGenerators[1] = {PauliMatrix[1]};
-cliffordGenerators[2] = {PauliMatrix[1], PauliMatrix[2]};
-cliffordGenerators[3] = {PauliMatrix[1], PauliMatrix[2], PauliMatrix[3]};
-cliffordGenerators[4] = Join[
-TensorProduct[PauliMatrix[1], #] &amp; /@ cliffordGenerators[3],
-{TensorProduct[PauliMatrix[2], IdentityMatrix[2]]},
-{TensorProduct[PauliMatrix[3], IdentityMatrix[2]]}
-];
-
-cliffordGenerators[n_?EvenQ] /; n &gt; 3 := cliffordGenerators[n] = Join[
-(TensorProduct[PauliMatrix[1], #] &amp; /@ cliffordGenerators[n - 2]),
-{TensorProduct[PauliMatrix[2], Nest[TensorProduct[IdentityMatrix[2], #] &amp;,
-IdentityMatrix[2], n/2 - 2]]}, {TensorProduct[PauliMatrix[3],
-Nest[TensorProduct[IdentityMatrix[2], #] &amp;, IdentityMatrix[2], n/2 - 2]]}
-];
-</pre>
-<!-- l. 58 --><p class='nopar'>
-</p>
-<!-- l. 60 --><p class='noindent'><span class='paragraphHead' id='in-the-conventions-of-park-jeong-hyucklecture-note-on-clifford-algebra-expanded-version'><a id='x13-200003.3'></a>In the conventions of “Park, Jeong - Hyuck.(2016).Lecture Note on Clifford
-Algebra : Expanded version”</span>
-   In this convention, gamma matrices can be generated as
-                                                                         
-
-                                                                         
-</p>
-   <pre class='verbatim' id='verbatim-2'>
-ClearAll[\[Gamma]];
-\[Gamma][2, 1] = PauliMatrix[1]; \[Gamma][2, 2] = PauliMatrix[2];
-\[Gamma][d_?EvenQ, i_] /; i &lt;= d - 2 := ArrayFlatten[TensorProduct[
-\[Gamma][d - 2, i], PauliMatrix[1]]];
-\[Gamma][d_?EvenQ, i_] /; d - i == 1 := ArrayFlatten[TensorProduct[
-IdentityMatrix[2^((d - 2)/2)], PauliMatrix[2]]];
-\[Gamma][d_?EvenQ, i_] /; d - i == 0 := ArrayFlatten[TensorProduct[
-IdentityMatrix[2^((d - 2)/2)], PauliMatrix[3]]];
-
-ClearAll[\[CapitalGamma]];
-\[CapitalGamma][d_?EvenQ] := IdentityMatrix[2^(d/2)];
-\[CapitalGamma][d_?EvenQ, j__] /; Apply[And, 1 &lt;= # &lt;= d &amp; /@ {j}] := Block[
-{permutations, signatures},{permutations, signatures} = Transpose[{#,
-Signature[#]} &amp; /@ Permutations[{j}]];
-Signature[{j}]/Length[signatures] signatures.(Apply[Dot,
-Table[\[Gamma][d, i], {i, #}]] &amp; /@ permutations)];
-</pre>
-<!-- l. 78 --><p class='nopar'>
-                                                                         
-
-                                                                         
-                                                                         
-
-                                                                         
-</p>
-   <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='websiteli2.html'>next</a>] [<a href='websitese7.html'>prev</a>] [<a href='websitese7.html#tailwebsitese7.html'>prev-tail</a>] [<a href='websitese8.html'>front</a>] [<a href='websitech3.html#websitese8.html'>up</a>] </p></div>
-<!-- l. 1 --><p class='indent'>   <a id='tailwebsitese8.html'></a>  </p> 
+   <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='websitech4.html'>next</a>] [<a href='websitese7.html'>prev</a>] [<a href='websitese7.html#tailwebsitese7.html'>prev-tail</a>] [<a href='websitese8.html'>front</a>] [<a href='websitech3.html#websitese8.html'>up</a>] </p></div>
+<!-- l. 1 --><p class='indent'>   <a id='tailwebsitese8.html'></a> </p> 
 <div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
  
 </body>  
