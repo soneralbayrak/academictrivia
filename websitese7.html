@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang='en-US' xml:lang='en-US'> 
-<head><title>Preliminaries: set theory</title> 
+<head><title>Nedir, ne işe yarar, oğrenmeye değer mi?</title> 
 <meta charset='utf-8' /> 
 <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
 <meta content='width=device-width,initial-scale=1' name='viewport' /> 
@@ -9,204 +9,134 @@
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
 <link href='css/custom.css' rel='stylesheet' type='text/css' /></head> 
 <body><div class='header'><p><a href='https://soneralbayrak.com/'>S.Albayrak</a> <a href='https://soneralbayrak.com/academictrivia'>Anasayfa</a> <a href='https://soneralbayrak.com/academictrivia/websiteli2.html'>Kategoriler</a></p></div> 
-   <!-- l. 37 --><div class='crosslinks'><p class='noindent'>[<a href='websitese8.html'>next</a>] [<a href='websitese6.html'>prev</a>] [<a href='websitese6.html#tailwebsitese6.html'>prev-tail</a>] [<a href='#tailwebsitese7.html'>tail</a>] [<a href='websitech3.html#websitese7.html'>up</a>] </p></div>
-   <h3 class='sectionHead' id='preliminaries-set-theory'><span class='titlemark'>3.2   </span> <a id='x12-190003.2'></a>Preliminaries: set theory</h3>
+   <!-- l. 2 --><div class='crosslinks'><p class='noindent'>[<a href='websitese8.html'>next</a>] [<a href='websitech3.html'>prev</a>] [<a href='websitech3.html#tailwebsitech3.html'>prev-tail</a>] [<a href='#tailwebsitese7.html'>tail</a>] [<a href='websitech3.html#websitese7.html'>up</a>] </p></div>
+   <h3 class='sectionHead' id='nedir-ne-ise-yarar-ogrenmeye-deger-mi'><span class='titlemark'>3.1   </span> <a id='x12-190003.1'></a>Nedir, ne işe yarar, öğrenmeye değer mi?</h3>
    <div class='sectionTOCS'>
-     <span class='subsectionToc'><a href='#definition-of-set-and-power-set' id='QQ2-12-20'>Definition of set and power set</a></span>
-<br />     <span class='subsectionToc'><a href='#operations-between-sets' id='QQ2-12-21'>Operations between sets</a></span>
    </div>
-<!-- l. 38 --><p class='indent'>   In this section, we will quickly review the first chapter of <span class='ecti-1200'>Algebra: Chapter
-</span><span class='ecti-1200'>0</span>.<span class='footnote-mark'><a href='websitese6.html#fn1x3'><sup class='textsuperscript'>1</sup></a></span><a id='x12-19001f1'></a>
-As explicitly stated there, this will not be a proper treatment; in fact, we will
-even further simplify (and make it even somewhat less rigorous) what is
-contained in that chapter.
-                                                                         
-
-                                                                         
-</p><!-- l. 40 --><p class='noindent'>
+<!-- l. 3 --><p class='noindent'><span class='paragraphHead' id='nedir'><a id='x12-200003.1'></a>Nedir:</span>
+   Kategori teori matematiğin son yüzyılda geliştirilmiş önemli bir
+alanıdır. Özet olarak matematiğin farklı alanlarını tek bir soyut bakış açısı
+altında birleştirir.
 </p>
-   <h4 class='subsectionHead' id='definition-of-set-and-power-set'><a id='x12-200003.2'></a>Definition of set and power set</h4>
-<!-- l. 41 --><p class='noindent'>A set is a collection of objects, and its <span class='ecti-1200'>elements </span>determine what the set
-is. What an element is a deep question that we will avoid, but clearly
-not everything can be an element. For instance, not all sets can be
-elements for other sets; if they could, then we would construct a set
-<!-- l. 41 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math> of
-“all sets that do not contain themselves”. Clearly such a set has to contain itself,
-which leads to a contradiction: infamous Russell’s paradox! The resolution is
-that <!-- l. 41 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
-is not a set to begin with: indeed, we will consider <span class='ecti-1200'>category </span>of sets, but not <span class='ecti-1200'>set</span>
-of sets in general.
-</p><!-- l. 43 --><p class='indent'>   The reader should be familiar with the following basics, but for the sake of
-completeness, let us spell them out:
-      </p><ol class='enumerate1'>
-<li class='enumerate' id='x12-20002x1'>Sets can be denoted as explicit list of elements within curly brackets,
-      e.g. <!-- l. 45 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
-      </li>
-<li class='enumerate' id='x12-20004x2'>Sets are <span class='ecti-1200'>orderless</span>: <!-- l. 46 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
-      </li>
-<li class='enumerate' id='x12-20006x3'>
-      <!-- l. 47 --><p class='noindent'>Ordered sets are denoted with round brackets:
-      <!-- l. 47 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel'>≠</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
-      In fact, an ordered set can be constructed via the standard sets as well,
-      e.g.
-                                                                         
-
-                                                                         
-      </p><!-- tex4ht:inline --><!-- l. 51 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
-                  <mtr><mtd class='align-odd' columnalign='right'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>↔</mo><mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></mtd>                  <mtd class='align-even'><mspace width='2em'></mspace></mtd>                  <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x12-20007r1'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.1)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
-                  </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>↔</mo><mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></mtd>                  <mtd class='align-even'><mspace width='2em'></mspace></mtd>                  <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x12-20008r2'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.2)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
-</mrow></mtd></mtr></mtable></math>
-      </li>
-<li class='enumerate' id='x12-20010x4'>Duplication of elements do not change a set:
-      <!-- l. 52 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
-      </li>
-<li class='enumerate' id='x12-20012x5'>Three dots are used to infer infinitely many more
-      elements that would belong to the <span class='ecti-1200'>obvious </span>pattern:
-      <!-- l. 53 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-bin'>−</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
-      denotes the set of all odd integers.
-      </li>
-<li class='enumerate' id='x12-20014x6'>
-      <!-- l. 54 --><p class='noindent'>Despite being mostly obvious, the inferred pattern is inherently
-      ambiguous. A more rigorous way is to use a <span class='ecti-1200'>predicate </span>in the <span class='ecti-1200'>set
-      </span><span class='ecti-1200'>comprehension</span><span class='footnote-mark'><a href='websitese6.html#fn2x3'><sup class='textsuperscript'>2</sup></a></span><a id='x12-20015f2'></a>;
-      there are two ways to do this: </p>
-           <ul class='itemize1'>
-           <li class='itemize'>We can write down <!-- l. 56 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mi>x</mi> <mo class='MathClass-rel'>∈</mo><mstyle class='text'><mtext> Domain </mtext></mstyle><mo class='MathClass-rel'>|</mo><mstyle class='text'><mtext> conditions </mtext></mstyle><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
-           </li>
-           <li class='itemize'>
-           <!-- l. 57 --><p class='noindent'>Or, we can write down <!-- l. 57 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-rel'>|</mo><mstyle class='text'><mtext> conditions </mtext></mstyle><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>,
-           which means </p><table class='equation'><tr><td>
-                                                                         
-
-                                                                         
-           <!-- l. 58 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
- <mstyle class='label' id='x12-20016r3'></mstyle><!-- endlabel --><mo class='MathClass-open' stretchy='false'>A</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mi>y</mi> <mo class='MathClass-rel'>∈</mo><mstyle class='text'><mtext> Domain inferred from conditions </mtext></mstyle><mo class='MathClass-rel'>|</mo><mspace class='thickpace' width='0.28em'></mspace><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>x</mi><mspace class='nbsp' width='0.33em'></mspace><mi mathvariant='italic'>&amp;y</mi> <mo class='MathClass-rel'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi>&amp;</mi><mstyle class='text'><mtext> conditions </mtext></mstyle><mo class='MathClass-close' stretchy='false'>}</mo>
-</mrow></math></td><td class='eq-no'>(3.3)</td></tr></table>
-           </li></ul>
-      <!-- l. 62 --><p class='noindent'>For example, the first way to denote odd integers (instead of
-      <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-bin'>−</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>) would be
-      <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-rel'>|</mo><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>n</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi>a</mi> <mo class='MathClass-rel'>=</mo> <mn>2</mn><mi>n</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>, whereas the
-      second one is <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>2</mn><mi>n</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-rel'>|</mo><mspace class='thickpace' width='0.28em'></mspace><mi>n</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
-      </p></li>
-<li class='enumerate' id='x12-20018x7'>
-      <!-- l. 65 --><p class='noindent'>In the last item above, we used two well-known
-      mathematical objects: common set notation (i.e.
-      <!-- l. 65 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ℤ</mi></math> for integers) and
-      quantifiers (i.e. <!-- l. 65 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo></mrow></math>
-      for <span class='ecti-1200'>there exists...</span>). For completeness, we will need to know
-           </p><ol class='enumerate2'>
-<li class='enumerate' id='x12-20020x1'><!-- l. 67 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>∅</mi><mo class='MathClass-punc'>,</mo><mi>N</mi><mo class='MathClass-punc'>,</mo><mi>Z</mi><mo class='MathClass-punc'>,</mo><mi>Q</mi><mo class='MathClass-punc'>,</mo><mi>R</mi><mo class='MathClass-punc'>,</mo><mi>C</mi></mrow></math>
-           denote the empty set and the set of natural, integral, rational,
-           real, and complex numbers respectively.
-           </li>
-<li class='enumerate' id='x12-20022x2'>
-           <!-- l. 68 --><p class='noindent'><!-- l. 68 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>!</mo></mrow></math>
-           denote  <span class='ecti-1200'>there  exists  …</span>,  <span class='ecti-1200'>for  all  …</span>,  and  <span class='ecti-1200'>there  exists  a  unique  …</span>
-           respectively.
-           </p><!-- l. 70 --><p class='noindent'>It is no coincidence that I put the dots to the <span class='ecti-1200'>right </span>of the expressions
-           for the quantifiers; one should read them as in a sentence, hence their
-           order matters. For instance
-                                                                         
-
-                                                                         
-           </p><!-- tex4ht:inline --><!-- l. 75 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
-<mtr><mtd class='align-odd' columnalign='right'><mrow><mspace width='-72.26999pt'></mspace><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>b</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>b</mi> <mo class='MathClass-rel'>=</mo> <mn>2</mn><mi>a</mi><mspace class='quad' width='1em'></mspace> <mo class='MathClass-rel'>↔</mo></mrow></mtd><mtd class='align-even'><mrow><mspace class='quad' width='1em'></mspace><mstyle class='text'><mtext> For all integers, there exists another integer which is twice the former.</mtext></mstyle><mspace width='2em'></mspace></mrow></mtd><mtd class='align-label' columnalign='right'><mrow>
-<mstyle class='label' id='x12-20023r4'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.4)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
-</mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mspace width='-72.26999pt'></mspace><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>b</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>b</mi> <mo class='MathClass-rel'>=</mo> <mn>2</mn><mi>a</mi><mspace class='quad' width='1em'></mspace> <mo class='MathClass-rel'>↔</mo></mrow></mtd><mtd class='align-even'><mrow><mspace class='quad' width='1em'></mspace><mstyle class='text'><mtext> There exists an integer that is twice all integers.</mtext></mstyle><mspace width='2em'></mspace></mrow></mtd>                      <mtd class='align-label' columnalign='right'><mrow>
-<mstyle class='label' id='x12-20024r5'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.5)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
-</mrow></mtd></mtr></mtable></math>
-           <!-- l. 76 --><p class='noindent'>Obviously, the first expression is correct whereas the second one is
-           false; but more importantly, they are different expressions!</p></li></ol>
-      </li>
-<li class='enumerate' id='x12-20026x8'>The standard notation to show that a set
-      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math> is a subset
-      of set <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>B</mi></math>
-      is <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊂</mo> <mi>B</mi></mrow></math> or
-      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>B</mi></mrow></math>. The
-      possibility of <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mi>B</mi></mrow></math>
-      is ruled out in the first notation (and hence
-      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
-      is called a proper subset), whereas it is still possible in the second
-      notation.<span class='footnote-mark'><a href='websitese6.html#fn3x3'><sup class='textsuperscript'>3</sup></a></span><a id='x12-20027f3'></a> In
-      terms of logic, <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>B</mi></mrow></math>
-      (i.e. inclusion of sets) corresponds to the relation
-      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>x</mi> <mo class='MathClass-rel'>∈</mo> <mi>A</mi> <mo class='MathClass-rel'>⇒</mo> <mi>x</mi> <mo class='MathClass-rel'>∈</mo> <mi>B</mi></mrow></math>. Clearly, we have
-      the relations <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>∅</mi><mo class='MathClass-rel'>⊆</mo> <mi>A</mi></mrow></math>
-      and <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>A</mi></mrow></math>;
-      likewise, <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>B</mi> <mo class='MathClass-bin'>∧</mo> <mi>B</mi> <mo class='MathClass-rel'>⊆</mo> <mi>A</mi></mrow></math>
-      means <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mi>B</mi></mrow></math>.
-      </li>
-<li class='enumerate' id='x12-20029x9'><!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow></math>
-      denotes the number of elements in the set
-      <!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>: if the set is
-      infinite, we write <!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow> <mo class='MathClass-rel'>=</mo> <mi>∞</mi></mrow></math>.
-      As expected, <!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-rel'>⊆</mo> <mi>T</mi> <mo class='MathClass-rel'>⇒</mo><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow> <mo class='MathClass-rel'>≤</mo><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>T</mi> </mrow><mo fence='true' form='postfix'>|</mo></mrow></mrow></math>.
-      </li>
-<li class='enumerate' id='x12-20031x10'><!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='bold-script'>𝒫</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>S</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> denotes <span class='ecti-1200'>the
-      </span><span class='ecti-1200'>power set </span>of <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>:
-      the set whose elements are the subsets of the set
-      <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>. If
-      <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math> is finite,
-      we have <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi mathvariant='bold-script'>𝒫</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>S</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mo fence='true' form='postfix'>|</mo></mrow> <mo class='MathClass-rel'>=</mo> <msup><mrow><mn>2</mn></mrow><mrow><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow></mrow></msup></mrow></math>,
-      which is why power sets are loosely denoted as
-      <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mn>2</mn></mrow><mrow><mi>S</mi></mrow></msup></math>
-      as well.</li></ol>
-<!-- l. 85 --><p class='noindent'>
+<!-- l. 5 --><p class='noindent'><span class='paragraphHead' id='ne-ise-yarar'><a id='x12-210003.1'></a>Ne işe yarar:</span>
 </p>
-   <h4 class='subsectionHead' id='operations-between-sets'><a id='x12-210003.2'></a>Operations between sets</h4>
-<!-- l. 86 --><p class='noindent'>There will be 6 important operations on sets that we need to know:
+      <ul class='itemize1'>
+      <li class='itemize'><span class='ecti-1200'>Bilgisayar bilimciler</span>’in kullandıkları bir çok tekniğin arka planındaki
+      kavramlar (compositionality, abstraction, representation-independence,
+      genericity,  ve  benzeri)  kategori  teori  ile  incelenir;  bu  yüzden  de,
+      özellikle Haskell gibi fonksiyonel dilleri anlama ve uzmanlaşmada
+      kategori teori büyük önem taşır.<span class='footnote-mark'><a href='#fn1x3' id='fn1x3-bk'><sup class='textsuperscript'>1</sup></a></span><a id='x12-21001f1'></a>
+      </li>
+      <li class='itemize'><span class='ecti-1200'>Mantık ve tanıtlama teorisi çalışan bilim insanları  </span>(logician’lar)
+      son yüzyıldaki bir çok ilerlemeyi (örneğin 1987’de ortaya atılan
+      “linear logic”) doğrudan kategori teori altında inceleyebilir; üstelik,
+      <span class='ecti-1200'>Curry–Howard correspondence </span>da denilen eşdeğerlik bize gösterir
+      ki  mantık  ve  matematiksel  ispatlar  doğrudan  bilgisayar  bilimiyle
+      eşleştirilebilir.  Örneğin  bir  matematiksel  teoremin  ispatı,  ona
+      karşılık  gelen  bir  programın  çözümü  olarak  gösterilebilir.
+      Bu  ilişkiyi  sağlayan  kategori  teoriye  dayanan  diller  (Haskell
+      gibi), bu sebeple matematiksel ve bundan kaynaklanan bir evrensel
+      geçerliliğe sahiptir.
+      </li>
+      <li class='itemize'><span class='ecti-1200'>Bilim felsefecileri </span>(ki aslında genel olarak bütün felsefeciler) kategori
+      teori ile modern ve klasik felsefi soruları yeniden yorumlayabilirler:
+      örneğin topos teori, Heidegger’in meşhur “What is a thing?” sorusuna
+      cevap aramak için kullanılabilir.<span class='footnote-mark'><a href='#fn2x3' id='fn2x3-bk'><sup class='textsuperscript'>2</sup></a></span><a id='x12-21002f2'></a>
+      Özellikle kuantum fiziğinin felsefi yorumlamasında (örneğin realist
+      bir dünya görüşü ile nesnelere değer atayabilmemizin kuantum
+      fiziğinin determinist olmayan yorumuyla bağdaştırılabilmesi<span class='footnote-mark'><a href='#fn3x3' id='fn3x3-bk'><sup class='textsuperscript'>3</sup></a></span><a id='x12-21003f3'></a>)
+      katerogi teori oldukça faydalı olabilir.<span class='footnote-mark'><a href='#fn4x3' id='fn4x3-bk'><sup class='textsuperscript'>4</sup></a></span><a id='x12-21004f4'></a>
+      </li>
+      <li class='itemize'><span class='ecti-1200'>Dilbilimciler</span>, dilin yapısını ve grameri anlamak için kategori teori
+      kullanabilirler. Örneğin “Whom does he go with?” ve “With whom
+      does he go?” cümlelerinin eşdeğerliliği İngilizce’nin bir kategori
+      çeşidi (compact strictly monoidal category) olmasıyla ispatlanabilir.<span class='footnote-mark'><a href='#fn5x3' id='fn5x3-bk'><sup class='textsuperscript'>5</sup></a></span><a id='x12-21005f5'></a>
+      </li>
+      <li class='itemize'><span class='ecti-1200'>Biyolojik ve kimyasal bilimlerle ilgilenen herkes </span>(kimyager, biomedikal
+      mühendisi, ve benzeri) bu alanlardaki süreçleri, ilgili alan için
+      tanımlanmış bir kategori ile inceleyebilir:<span class='footnote-mark'><a href='#fn6x3' id='fn6x3-bk'><sup class='textsuperscript'>6</sup></a></span><a id='x12-21006f6'></a>
+      bu tarz bir inceleme, bu bilim insanlarınının (veya mühendislerin,
+      teknikerlerin, vb.) mantık, fizik, matematik, dilbilimi gibi diğer alanlardaki
+      ilerlemeleri ve yeni yöntemleri rahatlıkla kendi alanlarında kullanmalarına
+      imkan tanır.
+      </li>
+      <li class='itemize'>
+                                                                         
+
+                                                                         
+      <!-- l. 17 --><p class='noindent'><span class='ecti-1200'>Matematikçiler ve matematiksel fizikçiler </span>alanlarının neredeyse
+      tamamını kategori teori merceği ile inceleyebilirler; bazı
+      örnekler:<span class='footnote-mark'><a href='#fn7x3' id='fn7x3-bk'><sup class='textsuperscript'>7</sup></a></span><a id='x12-21007f7'></a>
+           </p><ol class='enumerate1'>
+<li class='enumerate' id='x12-21009x1'>Matematiksel bir çok alan, kendilerine karşılık gelen bir kategori
+           altında incelenebilir: <span class='ecsx-1200'>Set </span>(kümeler), <span class='ecsx-1200'>FdVect </span>(sonlu boyutlu vektör
+           uzayları), <span class='ecsx-1200'>Grp </span>(gruplar), vb.<span class='footnote-mark'><a href='#fn8x3' id='fn8x3-bk'><sup class='textsuperscript'>8</sup></a></span><a id='x12-21010f8'></a>
+           </li>
+<li class='enumerate' id='x12-21012x2'>Kuantum grupları <!-- l. 20 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mo class='MathClass-rel'>↔</mo></mrow></math>
+           compact braided monoidal category
+           </li>
+<li class='enumerate' id='x12-21014x3'>Topolojik kuantum alan teorileri <!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mo class='MathClass-rel'>↔</mo></mrow></math>
+           compact symmetric monoidal categories (mesela <span class='ecsx-1200'>nCob</span>)
+           </li>
+<li class='enumerate' id='x12-21016x4'>Kuantum hesaplama ve kuantum bilgi işleme <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mo class='MathClass-rel'>↔</mo></mrow></math>
+           <span class='ecsx-1200'>Hilb</span>. Örneğin kuantum bilgisayarlarında kopyalama işleminin
+           yapılamamasının  kategori  teorik  açıklaması  çok  basit:  <span class='ecsx-1200'>Hilb</span>
+           kategorisi tensor-çarpımı kartesian olmayan bir kategori. Buradan
+           anlıyoruz ki yarın bir gün alternatif bir teori geliştirsek bile,
+           eğer Hilbert uzaylarını kullanacaksa (yani yine <span class='ecsx-1200'>Hilb </span>kategorisi
+           ile tarif edilecekse), o alternatif teoride de kuantum bilgisayarı
+           kopyalama işlemi yapamayacaktır!</li></ol>
+      </li>
+      <li class='itemize'><span class='ecti-1200'>Fizikçiler </span>hem klasik hem kauntum dünyasındaki bir çok
+      olguyu kategori teori bakış açısıyla açıklayabilir. Örneğin
+      ışığın davranışını da açıklayan ayar teorilerinin dayandığı
+      lie grupları <span class='ecti-1200'>compact symmetric monoidal category </span>olarak
+      incelenebilir.<span class='footnote-mark'><a href='#fn9x3' id='fn9x3-bk'><sup class='textsuperscript'>9</sup></a></span><a id='x12-21017f9'></a></li></ul>
+                                                                         
+
+                                                                         
+<!-- l. 28 --><p class='noindent'><span class='paragraphHead' id='ogrenmeye-deger-mi'><a id='x12-220003.1'></a>Öğrenmeye değer mi?</span>
       </p><ol class='enumerate1'>
-<li class='enumerate' id='x12-21002x1'>The union denoted by <!-- l. 88 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>∪</mo></math>,
-      e.g. <!-- l. 88 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>∪</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+<li class='enumerate' id='x12-22002x1'><span class='ecbx-1200'>Kesinlikle</span>,  eğer  matematikçi,  matematiksel  fizikçi,  ya  da
+      bilgisayar  bilimcisi  (computer  scientist)  olacaksanız  –  ya  da  zaten
+      öyleyseniz!
       </li>
-<li class='enumerate' id='x12-21004x2'>The intersection denoted by <!-- l. 89 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>∩</mo></math>,
-      e.g. <!-- l. 89 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>∩</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+<li class='enumerate' id='x12-22004x2'><span class='ecbx-1200'>Muhtemelen  evet</span>,  eğer  genel  olarak  bilim,  yazılım,  ve  soyut
+      şeylerle ilgileniyorsanız.
       </li>
+<li class='enumerate' id='x12-22006x3'><span class='ecbx-1200'>Belki</span>,  eğer  yukarıdaki  iki  gruptan  biri  değilseniz.  Açıkcası
+      biraz okuyup ilgili olup olmadığınıza bakmanız muhtemelen isabet
+      olacaktır!</li></ol>
                                                                          
 
                                                                          
-<li class='enumerate' id='x12-21006x3'>The difference denoted by <!-- l. 90 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>∖</mo></math>,
-      e.g. <!-- l. 90 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>∖</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
-      </li>
-<li class='enumerate' id='x12-21008x4'>The disjoint union denoted by <!-- l. 91 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>⊔</mo></math>,
-      e.g. <!-- l. 91 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>⊔</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>5</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
-      </li>
-<li class='enumerate' id='x12-21010x5'>
-      <!-- l. 92 --><p class='noindent'>The Cartesian product denoted by
-      <!-- l. 92 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>×</mo></math>,
-      e.g.
-      </p><!-- tex4ht:inline --><!-- l. 95 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
-<mtr><mtd class='align-odd' columnalign='right'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>×</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></mtd><mtd class='align-even'><mspace width='2em'></mspace></mtd><mtd class='align-label' columnalign='right'><mrow>
-<mstyle class='label' id='x12-21011r6'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.6)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
-</mrow></mtd></mtr></mtable></math>
-      <!-- l. 96 --><p class='noindent'>The product of a set with itself is often denoted as if it is a regular number, i.e.
-      <!-- l. 96 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-bin'>×</mo> <mi>A</mi> <mo class='MathClass-rel'>=</mo> <msup><mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></math>,
-      <!-- l. 96 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-bin'>×</mo> <mi>A</mi> <mo class='MathClass-bin'>×</mo> <mi>A</mi> <mo class='MathClass-rel'>=</mo> <msup><mrow><mi>A</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></math>,
-      etc.
-      </p></li>
-<li class='enumerate' id='x12-21013x6'>Quotient by an equivalence relation</li></ol>
-                                                                         
-
-                                                                         
-<!-- l. 101 --><p class='indent'>
-      </p><ol class='enumerate1'>
-<li class='enumerate' id='x12-21015x1'><!-- l. 101 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
-      and <!-- l. 101 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>T</mi></math>
-      are called disjoint if <!-- l. 101 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-bin'>∩</mo> <mi>T</mi> <mo class='MathClass-rel'>=</mo> <mi>∅</mi></mrow></math>
-      </li>
-<li class='enumerate' id='x12-21017x2'>The complement of a subset <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>T</mi></math>
-      in a set <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
-      is <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-bin'>∖</mo> <mi>T</mi></mrow></math>.</li></ol>
-                                                                         
-
-                                                                         
-   <div class='footnotes'><!-- l. 38 --><p class='indent'>     <span class='footnote-mark'><a href='websitese6.html#fn1x3-bk'><sup class='textsuperscript'>1</sup></a></span><span class='ecrm-1000'>See </span><a class='url' href='https://books.google.com.tr/books?id=h4dNEAAAQBAJ'><span class='ectt-1000'>https://books.google.com.tr/books?id=h4dNEAAAQBAJ</span></a><span class='ecrm-1000'>.</span></p>
-<!-- l. 54 --><p class='noindent'><span class='footnote-mark'><a href='websitese6.html#fn2x3-bk'><sup class='textsuperscript'>2</sup></a></span><span class='ecrm-1000'>Set comprehension, or set abstraction means the way to build a set. See</span>
-<a class='url' href='https://en.wikipedia.org/wiki/Set-builder_notation'><span class='ectt-1000'>https://en.wikipedia.org/wiki/Set-builder_notation</span></a><span class='ecrm-1000'>.</span></p>
-<!-- l. 80 --><p class='noindent'><span class='footnote-mark'><a href='websitese6.html#fn3x3-bk'><sup class='textsuperscript'>3</sup></a></span><span class='ecrm-1000'>This differs from the notation and explanation of </span><span class='ecti-1000'>Algebra: Chapter 0 </span><span class='ecrm-1000'>(see page 3), but we
-</span><span class='ecrm-1000'>will stick to this notation instead.</span></p>                                                                       </div>
-<!-- l. 105 --><div class='crosslinks'><p class='noindent'>[<a href='websitese8.html'>next</a>] [<a href='websitese6.html'>prev</a>] [<a href='websitese6.html#tailwebsitese6.html'>prev-tail</a>] [<a href='websitese7.html'>front</a>] [<a href='websitech3.html#websitese7.html'>up</a>] </p></div>
-<!-- l. 105 --><p class='indent'>   <a id='tailwebsitese7.html'></a>  </p> 
+   <div class='footnotes'><!-- l. 7 --><p class='noindent'><span class='footnote-mark'><a href='#fn1x3-bk' id='fn1x3'><sup class='textsuperscript'>1</sup></a></span><span class='ecrm-1000'>Yazılımcılar  ya  da  bilgisayar  bilimcileri  için  kategori  teoriye  giriş  </span><span class='ecrm-1000'>şu  kitap
+</span><span class='ecrm-1000'>ile yapılabilir: </span><span class='ecti-1000'>Category Theory for Programmers  </span><span class='ecrm-1000'>(Bartosz Milewski). Yaygın bilinen
+</span><span class='ecss-1000'>C++</span><span class='ecrm-1000'>’dan  örnekler  vermesi  ve  doğrudan  kategori  teori  temelli  </span><span class='ecss-1000'>Haskell</span><span class='ecrm-1000'>’i  kullanması
+</span><span class='ecrm-1000'>açısından oldukça faydalı bir kitap!</span></p>
+<!-- l. 9 --><p class='noindent'><span class='footnote-mark'><a href='#fn2x3-bk' id='fn2x3'><sup class='textsuperscript'>2</sup></a></span><span class='ecrm-1000'>Bakınız kitap bölümü </span><span class='ecti-1000'>“What is a Thing?”: Topos Theory in the Foundations of
+</span><span class='ecti-1000'>Physics </span><span class='ecrm-1000'>(A. Döring ve C. Isham).</span></p>
+<!-- l. 9 --><p class='noindent'><span class='footnote-mark'><a href='#fn3x3-bk' id='fn3x3'><sup class='textsuperscript'>3</sup></a></span><span class='ecrm-1000'>Bakınız Kochen-Specker teoremi.</span></p>
+<!-- l. 9 --><p class='noindent'><span class='footnote-mark'><a href='#fn4x3-bk' id='fn4x3'><sup class='textsuperscript'>4</sup></a></span><span class='ecrm-1000'>Kuantum fiziğini klasik fizikten ayırt edebilmek kategori teori ile çok basit hale
+</span><span class='ecrm-1000'>geliyor: klasik fizikte ölçülebilir değerler </span><span class='ecsx-1000'>Set </span><span class='ecrm-1000'>kategorisi ile incelenir, bu ilkokuldan
+</span><span class='ecrm-1000'>beri  öğrendiğimiz  kümelere  karşılık  geliyor;  oysa  kuantum  fiziğindeki  ilgili
+</span><span class='ecrm-1000'>kategori </span><span class='ecsx-1000'>Hilb</span><span class='ecrm-1000'>, Hilbert uzayları kategorisi, ve bu kategori kümelerden oldukça farklı.
+</span><span class='ecrm-1000'>Teknik tabirle, </span><span class='ecsx-1000'>Set </span><span class='ecrm-1000'>cartesian-closed kategori, oysa </span><span class='ecsx-1000'>Hilb </span><span class='ecrm-1000'>compact symmetric monoidal
+</span><span class='ecrm-1000'>bir  kategori.  Detaylar  için  bakınız  kitap  bölümü  </span><span class='ecti-1000'>‘Physics,  Topology,  Logic  and
+</span><span class='ecti-1000'>Computation: A Rosetta Stone </span><span class='ecrm-1000'>(J. Baez ve M. Stay).</span></p>
+<!-- l. 11 --><p class='noindent'><span class='footnote-mark'><a href='#fn5x3-bk' id='fn5x3'><sup class='textsuperscript'>5</sup></a></span><span class='ecrm-1000'>Bakınız kitap bölümü </span><span class='ecti-1000'>Compact Monoidal Categories from Linguistics to Physics
+</span><span class='ecrm-1000'>(J. Lambek).</span></p>
+<!-- l. 15 --><p class='noindent'><span class='footnote-mark'><a href='#fn6x3-bk' id='fn6x3'><sup class='textsuperscript'>6</sup></a></span><span class='ecrm-1000'>Örneğin biyolojik süreçlerle ilgili </span><span class='ecsx-1000'>BioProc </span><span class='ecrm-1000'>kategorisi tanımlayabiliriz: böyle
+</span><span class='ecrm-1000'>bir kategorinin fiziksel süreçlerle ilgili tanımlanan kategorilerle bir çok ortak noktası
+</span><span class='ecrm-1000'>olacaktır, bakınız kitap bölümü </span><span class='ecti-1000'>Categories for the Practising Physicist </span><span class='ecrm-1000'>(B. Coecke
+</span><span class='ecrm-1000'>ve É.O. Paquette).</span> </p>
+<!-- l. 17 --><p class='noindent'><span class='footnote-mark'><a href='#fn7x3-bk' id='fn7x3'><sup class='textsuperscript'>7</sup></a></span><span class='ecrm-1000'>Detaylar için: </span><span class='ecti-1000'>New structures for Physics </span><span class='ecrm-1000'>(editör Bob Coecke).</span></p>
+<!-- l. 19 --><p class='noindent'><span class='footnote-mark'><a href='#fn8x3-bk' id='fn8x3'><sup class='textsuperscript'>8</sup></a></span><span class='ecrm-1000'>Matematik  odaklı  bir  kategori  tanıtımı  için  </span><span class='ecti-1000'>Algebra: Chapter 0  </span><span class='ecrm-1000'>(Paolo  Aluffi)
+</span><span class='ecrm-1000'>kitabının ilk bölümünü </span><span class='ecrm-1000'>tavsiye ederim.</span></p>
+<!-- l. 25 --><p class='noindent'><span class='footnote-mark'><a href='#fn9x3-bk' id='fn9x3'><sup class='textsuperscript'>9</sup></a></span><span class='ecrm-1000'>Bakınız kitap bölümü </span><span class='ecti-1000'>Physics, Topology, Logic and Computation: A Rosetta Stone </span><span class='ecrm-1000'>(J.
+</span><span class='ecrm-1000'>Baez ve M. Stay).</span></p>                                                                                           </div>
+<!-- l. 37 --><div class='crosslinks'><p class='noindent'>[<a href='websitese8.html'>next</a>] [<a href='websitech3.html'>prev</a>] [<a href='websitech3.html#tailwebsitech3.html'>prev-tail</a>] [<a href='websitese7.html'>front</a>] [<a href='websitech3.html#websitese7.html'>up</a>] </p></div>
+<!-- l. 37 --><p class='indent'>   <a id='tailwebsitese7.html'></a>  </p> 
 <div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
  
 </body>  
