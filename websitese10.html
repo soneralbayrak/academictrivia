@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang='en-US' xml:lang='en-US'> 
-<head><title>Categories</title> 
+<head><title>Preliminaries: set theory</title> 
 <meta charset='utf-8' /> 
 <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
 <meta content='width=device-width,initial-scale=1' name='viewport' /> 
@@ -9,82 +9,263 @@
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
 <link href='css/custom.css' rel='stylesheet' type='text/css' /></head> 
 <body><div class='header'><p><a href='https://soneralbayrak.com/'>S.Albayrak</a> <a href='https://soneralbayrak.com/academictrivia'>Anasayfa</a> <a href='https://soneralbayrak.com/academictrivia/websiteli2.html'>Kategoriler</a></p></div> 
-   <!-- l. 124 --><div class='crosslinks'><p class='noindent'>[<a href='websitese11.html'>next</a>] [<a href='websitese9.html'>prev</a>] [<a href='websitese9.html#tailwebsitese9.html'>prev-tail</a>] [<a href='#tailwebsitese10.html'>tail</a>] [<a href='websitech3.html#websitese10.html'>up</a>] </p></div>
-                                                                         
-
-                                                                         
-   <h3 class='sectionHead' id='categories'><span class='titlemark'>3.3   </span> <a id='x15-280003.3'></a>Categories</h3>
+   <!-- l. 37 --><div class='crosslinks'><p class='noindent'>[<a href='websitese11.html'>next</a>] [<a href='websitese9.html'>prev</a>] [<a href='websitese9.html#tailwebsitese9.html'>prev-tail</a>] [<a href='#tailwebsitese10.html'>tail</a>] [<a href='websitech3.html#websitese10.html'>up</a>] </p></div>
+   <h3 class='sectionHead' id='preliminaries-set-theory'><span class='titlemark'>3.2   </span> <a id='x15-250003.2'></a>Preliminaries: set theory</h3>
    <div class='sectionTOCS'>
+     <span class='subsectionToc'><a href='#definition-of-set-and-power-set' id='QQ2-15-26'>Definition of set and power set</a></span>
+<br />     <span class='subsectionToc'><a href='#operations-between-sets' id='QQ2-15-27'>Operations between sets</a></span>
+<br />     <span class='subsectionToc'><a href='#relations-partitions-and-quotients' id='QQ2-15-28'>Relations, partitions, and quotients</a></span>
    </div>
-<!-- l. 125 --><p class='indent'>   Definition: A category C consists of </p>
-      <ul class='itemize1'>
-      <li class='itemize'>a class Obj(C) of objects of the category
-      </li>
-      <li class='itemize'>for every two objects A and B of C, a set Hom<!-- l. 128 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow></mrow><mrow><mi>C</mi></mrow></msub></math>(A,B)
-      of morphisms with following properties:</li></ul>
-<!-- l. 131 --><p class='noindent'>
-      </p><ol class='enumerate1'>
-<li class='enumerate' id='x15-28002x1'><!-- l. 131 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo></mrow></math>
-      at least 1 morphism, identity morphism <!-- l. 131 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mn>1</mn></mrow><mrow><mi>A</mi></mrow></msub></math>,
-      in Hom(A,A)
-      </li>
-<li class='enumerate' id='x15-28004x2'>one can compose morphisms: <!-- l. 132 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-punc'>,</mo><mi>B</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin'>×</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>B</mi><mo class='MathClass-punc'>,</mo><mi>C</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>→</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-punc'>,</mo><mi>C</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
-      </li>
-<li class='enumerate' id='x15-28006x3'>compositions are associative
-      </li>
-<li class='enumerate' id='x15-28008x4'>identity morphisms are identities with respect to composition, i.e. for
-      <!-- l. 134 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-punc'>,</mo><mi>B</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>,
-      <!-- l. 134 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><msub><mrow><mn>1</mn></mrow><mrow><mi>A</mi></mrow></msub> <mo class='MathClass-rel'>=</mo> <msub><mrow><mn>1</mn></mrow><mrow><mi>B</mi></mrow></msub><mi>f</mi> <mo class='MathClass-rel'>=</mo> <mi>f</mi></mrow></math>
+<!-- l. 38 --><p class='indent'>   In this section, we will quickly review the first chapter of <span class='ecti-1200'>Algebra: Chapter
+</span><span class='ecti-1200'>0</span>.<span class='footnote-mark'><a href='websitese9.html#fn1x3'><sup class='textsuperscript'>1</sup></a></span><a id='x15-25001f1'></a>
+As explicitly stated there, this will not be a proper treatment; in fact, we will
+even further simplify (and make it even somewhat less rigorous) what is
+contained in that chapter.
                                                                          
 
                                                                          
-      </li>
-<li class='enumerate' id='x15-28010x5'>Hom(A,B) and Hom(C,D) are distinct unless <!-- l. 135 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mi>C</mi></mrow></math>
-      and <!-- l. 135 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>B</mi> <mo class='MathClass-rel'>=</mo> <mi>D</mi></mrow></math>.</li></ol>
-<!-- l. 138 --><p class='indent'>   Definition: if domain and codomain of a morphism is same, then it is called
-endomorphism: <!-- l. 138 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>End</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel'> :</mo><mo class='MathClass-rel'>=</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-punc'>,</mo><mi>A</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
-</p><!-- l. 140 --><p class='indent'>   Definition: a morphism <!-- l. 140 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-punc'>,</mo><mi>B</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
-is an isomorphism if it has a two sided inverse, i.e.
-<!-- l. 140 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>g</mi></mrow></math> s.t.
-<!-- l. 140 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>gf</mi> <mo class='MathClass-rel'>=</mo> <msub><mrow><mn>1</mn></mrow><mrow><mi>A</mi></mrow></msub></mrow></math> and
-<!-- l. 140 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>fg</mi> <mo class='MathClass-rel'>=</mo> <msub><mrow><mn>1</mn></mrow><mrow><mi>B</mi></mrow></msub></mrow></math>.
-</p><!-- l. 142 --><p class='indent'>   If all morphisms in a category are isomorphisms, then that category is called
-<span class='ecti-1200'>groupoids</span>.
-</p><!-- l. 144 --><p class='indent'>   If an endomorphism is also an isomorpihm, it is called
-automorphism. The set of automorphisms is denoted as
-<!-- l. 144 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>Aut</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>, which is a
-subset of <!-- l. 144 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>End</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
-</p><!-- l. 146 --><p class='indent'>   Aut(A) is a group for all objects <!-- l. 146 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
-of all categories.
-</p><!-- l. 148 --><p class='indent'>   Definitions: A morphism <!-- l. 148 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-punc'>,</mo><mi>B</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> is a
-monomorphism if <span class='ecti-1200'>for all objects </span><!-- l. 148 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>Z</mi></math>
-<span class='ecti-1200'>and all morphisms </span><!-- l. 148 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>α</mi><mo class='MathClass-punc'>,</mo><msup><mrow><mi>α</mi></mrow><mrow><mi>′</mi></mrow></msup> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>Z</mi><mo class='MathClass-punc'>,</mo><mi>A</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
-<span class='ecti-1200'>of the category, we have</span> </p><table class='equation'><tr><td>
-<!-- l. 149 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
-                           <mstyle class='label' id='x15-28011r3'></mstyle><!-- endlabel --><mo class='MathClass-open' stretchy='false'>α</mo><mo class='MathClass-rel'>≠</mo><msup><mrow><mi>α</mi></mrow><mrow><mi>′</mi></mrow></msup><mspace class='quad' width='1em'></mspace> <mo class='MathClass-rel'>→</mo><mspace class='quad' width='1em'></mspace><mi>f</mi> <mo class='MathClass-bin'>⋅</mo> <mi>α</mi><mo class='MathClass-rel'>≠</mo><mi>f</mi> <mo class='MathClass-bin'>⋅</mo> <msup><mrow><mi>α</mi></mrow><mrow><mi>′</mi></mrow></msup>
-</mrow></math></td><td class='eq-no'>(3.3)</td></tr></table>
-<!-- l. 152 --><p class='indent'>   In words <span class='ecbi-1200'>monomorphisms cannot morph different morphisms into
-</span><span class='ecbi-1200'>the same one</span>. Similarly, <span class='ecbi-1200'>epimorphisms cannot be morphed into the
-</span><span class='ecbi-1200'>same morphism by different morphisms</span>, with the definition: A morphism
-<!-- l. 152 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-punc'>,</mo><mi>B</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> is a epimorphism
-if <span class='ecti-1200'>for all objects </span><!-- l. 152 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>Z</mi></math>
-                                                                         
-
-                                                                         
-<span class='ecti-1200'>and all morphisms </span><!-- l. 152 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>β</mi><mo class='MathClass-punc'>,</mo><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup> <mo class='MathClass-rel'>∈</mo> <mi mathvariant='italic'>Hom</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>B</mi><mo class='MathClass-punc'>,</mo><mi>Z</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
-<span class='ecti-1200'>of the category, we have</span> </p><table class='equation'><tr><td>
-<!-- l. 153 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
-                           <mstyle class='label' id='x15-28012r4'></mstyle><!-- endlabel --><mo class='MathClass-open' stretchy='false'>β</mo><mo class='MathClass-rel'>≠</mo><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup><mspace class='quad' width='1em'></mspace> <mo class='MathClass-rel'>→</mo><mspace class='quad' width='1em'></mspace><mi>β</mi> <mo class='MathClass-bin'>⋅</mo> <mi>f</mi><mo class='MathClass-rel'>≠</mo><msup><mrow><mi>β</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-bin'>⋅</mo> <mi>f</mi>
-</mrow></math></td><td class='eq-no'>(3.4)</td></tr></table>
-<!-- l. 157 --><p class='indent'>   A morphism being both a monomorphism and epimorphism <span class='ecbi-1200'>does not
-</span><span class='ecbi-1200'>necessarily guarantee </span>that it is also an isomorphism. This is only true in some
-categories such as Set.
-                                                                         
-
-                                                                         
+</p><!-- l. 40 --><p class='noindent'>
 </p>
-   <!-- l. 159 --><div class='crosslinks'><p class='noindent'>[<a href='websitese11.html'>next</a>] [<a href='websitese9.html'>prev</a>] [<a href='websitese9.html#tailwebsitese9.html'>prev-tail</a>] [<a href='websitese10.html'>front</a>] [<a href='websitech3.html#websitese10.html'>up</a>] </p></div>
-<!-- l. 159 --><p class='indent'>   <a id='tailwebsitese10.html'></a> </p> 
+   <h4 class='subsectionHead' id='definition-of-set-and-power-set'><a id='x15-260003.2'></a>Definition of set and power set</h4>
+<!-- l. 41 --><p class='noindent'>A set is a collection of objects, and its <span class='ecti-1200'>elements </span>determine what the set
+is. What an element is a deep question that we will avoid, but clearly
+not everything can be an element. For instance, not all sets can be
+elements for other sets; if they could, then we would construct a set
+<!-- l. 41 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math> of
+“all sets that do not contain themselves”. Clearly such a set has to contain itself,
+which leads to a contradiction: infamous Russell’s paradox! The resolution is
+that <!-- l. 41 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
+is not a set to begin with: indeed, we will consider <span class='ecti-1200'>category </span>of sets, but not <span class='ecti-1200'>set</span>
+of sets in general.
+</p><!-- l. 43 --><p class='indent'>   The reader should be familiar with the following basics, but for the sake of
+completeness, let us spell them out:
+      </p><ol class='enumerate1'>
+<li class='enumerate' id='x15-26002x1'>Sets can be denoted as explicit list of elements within curly brackets,
+      e.g. <!-- l. 45 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+      </li>
+<li class='enumerate' id='x15-26004x2'>Sets are <span class='ecti-1200'>orderless</span>: <!-- l. 46 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+      </li>
+<li class='enumerate' id='x15-26006x3'>
+      <!-- l. 47 --><p class='noindent'>Ordered sets are denoted with round brackets:
+      <!-- l. 47 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel'>≠</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+      In fact, an ordered set can be constructed via the standard sets as well,
+      e.g.
+                                                                         
+
+                                                                         
+      </p><!-- tex4ht:inline --><!-- l. 51 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left'>
+                  <mtr><mtd class='align-odd' columnalign='right'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>↔</mo><mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></mtd>                  <mtd class='align-even'><mspace width='2em'></mspace></mtd>                  <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x15-26007r1'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.1)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+                  </mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>↔</mo><mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></mtd>                  <mtd class='align-even'><mspace width='2em'></mspace></mtd>                  <mtd class='align-label' columnalign='right'><mrow><mstyle class='label' id='x15-26008r2'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(3.2)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mrow></mtd></mtr></mtable></math>
+      </li>
+<li class='enumerate' id='x15-26010x4'>Duplication of elements do not change a set:
+      <!-- l. 52 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+      </li>
+<li class='enumerate' id='x15-26012x5'>Three dots are used to infer infinitely many more
+      elements that would belong to the <span class='ecti-1200'>obvious </span>pattern:
+      <!-- l. 53 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-bin'>−</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+      denotes the set of all odd integers.
+      </li>
+<li class='enumerate' id='x15-26014x6'>
+      <!-- l. 54 --><p class='noindent'>Despite being mostly obvious, the inferred pattern is inherently
+      ambiguous. A more rigorous way is to use a <span class='ecti-1200'>predicate </span>in the <span class='ecti-1200'>set
+      </span><span class='ecti-1200'>comprehension</span><span class='footnote-mark'><a href='websitese9.html#fn2x3'><sup class='textsuperscript'>2</sup></a></span><a id='x15-26015f2'></a>;
+      there are two ways to do this: </p>
+           <ul class='itemize1'>
+           <li class='itemize'>We can write down <!-- l. 56 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mi>x</mi> <mo class='MathClass-rel'>∈</mo><mstyle class='text'><mtext> Domain </mtext></mstyle><mo class='MathClass-rel'>|</mo><mstyle class='text'><mtext> conditions </mtext></mstyle><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+                                                                         
+
+                                                                         
+           </li>
+           <li class='itemize'>
+           <!-- l. 57 --><p class='noindent'>Or, we can write down <!-- l. 57 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-rel'>|</mo><mstyle class='text'><mtext> conditions </mtext></mstyle><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>,
+           which means </p><table class='equation-star'><tr><td>
+           <!-- l. 58 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+ <mi>A</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mi>y</mi> <mo class='MathClass-rel'>∈</mo><mstyle class='text'><mtext> Domain inferred from conditions </mtext></mstyle><mo class='MathClass-rel'>|</mo><mspace class='thickpace' width='0.28em'></mspace><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>x</mi><mspace class='nbsp' width='0.33em'></mspace><mi mathvariant='italic'>&amp;y</mi> <mo class='MathClass-rel'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi>&amp;</mi><mstyle class='text'><mtext> conditions </mtext></mstyle><mo class='MathClass-close' stretchy='false'>}</mo>
+</mrow></math></td></tr></table>
+           </li></ul>
+      <!-- l. 62 --><p class='noindent'>For example, the first way to denote odd integers (instead of
+      <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mo class='MathClass-bin'>−</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>…</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>) would be
+      <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-rel'>|</mo><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>n</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi>a</mi> <mo class='MathClass-rel'>=</mo> <mn>2</mn><mi>n</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>, whereas the
+      second one is <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>2</mn><mi>n</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-rel'>|</mo><mspace class='thickpace' width='0.28em'></mspace><mi>n</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+      </p></li>
+<li class='enumerate' id='x15-26017x7'>
+      <!-- l. 65 --><p class='noindent'>In the last item above, we used two well-known
+      mathematical objects: common set notation (i.e.
+      <!-- l. 65 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ℤ</mi></math> for integers) and
+      quantifiers (i.e. <!-- l. 65 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo></mrow></math>
+      for <span class='ecti-1200'>there exists...</span>). For completeness, we will need to know
+           </p><ol class='enumerate2'>
+<li class='enumerate' id='x15-26019x1'><!-- l. 67 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>∅</mi><mo class='MathClass-punc'>,</mo><mi>N</mi><mo class='MathClass-punc'>,</mo><mi>Z</mi><mo class='MathClass-punc'>,</mo><mi>Q</mi><mo class='MathClass-punc'>,</mo><mi>R</mi><mo class='MathClass-punc'>,</mo><mi>C</mi></mrow></math>
+           denote the empty set and the set of natural, integral, rational,
+           real, and complex numbers respectively.
+           </li>
+<li class='enumerate' id='x15-26021x2'>
+                                                                         
+
+                                                                         
+           <!-- l. 68 --><p class='noindent'><!-- l. 68 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>,</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-punc'>!</mo></mrow></math>
+           denote  <span class='ecti-1200'>there  exists  …</span>,  <span class='ecti-1200'>for  all  …</span>,  and  <span class='ecti-1200'>there  exists  a  unique  …</span>
+           respectively.
+           </p><!-- l. 70 --><p class='noindent'>It is no coincidence that I put the dots to the <span class='ecti-1200'>right </span>of the expressions
+           for the quantifiers; one should read them as in a sentence, hence their
+           order matters. For instance
+           </p><!-- tex4ht:inline --><!-- l. 75 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left'>
+<mtr><mtd class='align-odd' columnalign='right'><mrow><mspace width='-72.26999pt'></mspace><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>b</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>b</mi> <mo class='MathClass-rel'>=</mo> <mn>2</mn><mi>a</mi><mspace class='quad' width='1em'></mspace> <mo class='MathClass-rel'>↔</mo></mrow></mtd><mtd class='align-even'><mrow><mspace class='quad' width='1em'></mspace><mstyle class='text'><mtext> For all integers, there exists another integer which is twice the former.</mtext></mstyle><mspace width='2em'></mspace></mrow></mtd><mtd class='align-label' columnalign='right'></mtd><mtd class='align-label'><mrow>
+<mspace width='2em'></mspace></mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mspace width='-72.26999pt'></mspace><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>b</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>b</mi> <mo class='MathClass-rel'>=</mo> <mn>2</mn><mi>a</mi><mspace class='quad' width='1em'></mspace> <mo class='MathClass-rel'>↔</mo></mrow></mtd><mtd class='align-even'><mrow><mspace class='quad' width='1em'></mspace><mstyle class='text'><mtext> There exists an integer that is twice all integers.</mtext></mstyle><mspace width='2em'></mspace></mrow></mtd>                      <mtd class='align-label' columnalign='right'></mtd><mtd class='align-label'><mrow>
+<mspace width='2em'></mspace></mrow></mtd></mtr></mtable></math>
+           <!-- l. 76 --><p class='noindent'>Obviously, the first expression is correct whereas the second one is
+           false; but more importantly, they are different expressions!</p></li></ol>
+      </li>
+<li class='enumerate' id='x15-26023x8'>The standard notation to show that a set
+      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math> is a subset
+      of set <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>B</mi></math>
+      is <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊂</mo> <mi>B</mi></mrow></math> or
+      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>B</mi></mrow></math>. The
+      possibility of <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mi>B</mi></mrow></math>
+      is ruled out in the first notation (and hence
+      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
+      is called a proper subset), whereas it is still possible in the second
+      notation.<span class='footnote-mark'><a href='websitese9.html#fn3x3'><sup class='textsuperscript'>3</sup></a></span><a id='x15-26024f3'></a> In
+      terms of logic, <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>B</mi></mrow></math>
+      (i.e. inclusion of sets) corresponds to the relation
+      <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>x</mi> <mo class='MathClass-rel'>∈</mo> <mi>A</mi> <mo class='MathClass-rel'>⇒</mo> <mi>x</mi> <mo class='MathClass-rel'>∈</mo> <mi>B</mi></mrow></math>. Clearly, we have
+                                                                         
+
+                                                                         
+      the relations <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>∅</mi><mo class='MathClass-rel'>⊆</mo> <mi>A</mi></mrow></math>
+      and <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>A</mi></mrow></math>;
+      likewise, <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>⊆</mo> <mi>B</mi> <mo class='MathClass-bin'>∧</mo> <mi>B</mi> <mo class='MathClass-rel'>⊆</mo> <mi>A</mi></mrow></math>
+      means <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel'>=</mo> <mi>B</mi></mrow></math>.
+      </li>
+<li class='enumerate' id='x15-26026x9'><!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow></math>
+      denotes the number of elements in the set
+      <!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>: if the set is
+      infinite, we write <!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow> <mo class='MathClass-rel'>=</mo> <mi>∞</mi></mrow></math>.
+      As expected, <!-- l. 81 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-rel'>⊆</mo> <mi>T</mi> <mo class='MathClass-rel'>⇒</mo><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow> <mo class='MathClass-rel'>≤</mo><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>T</mi> </mrow><mo fence='true' form='postfix'>|</mo></mrow></mrow></math>.
+      </li>
+<li class='enumerate' id='x15-26028x10'><!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='bold-script'>𝒫</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>S</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> denotes <span class='ecti-1200'>the
+      </span><span class='ecti-1200'>power set </span>of <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>:
+      the set whose elements are the subsets of the set
+      <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>. If
+      <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math> is finite,
+      we have <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi mathvariant='bold-script'>𝒫</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>S</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mo fence='true' form='postfix'>|</mo></mrow> <mo class='MathClass-rel'>=</mo> <msup><mrow><mn>2</mn></mrow><mrow><mrow><mo fence='true' form='prefix'> |</mo><mrow><mi>S</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow></mrow></msup></mrow></math>,
+      which is why power sets are loosely denoted as
+      <!-- l. 82 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mn>2</mn></mrow><mrow><mi>S</mi></mrow></msup></math>
+      as well.</li></ol>
+<!-- l. 85 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='operations-between-sets'><a id='x15-270003.2'></a>Operations between sets</h4>
+<!-- l. 86 --><p class='noindent'>There will be 6 important operations on sets that we need to know:
+      </p><ol class='enumerate1'>
+<li class='enumerate' id='x15-27002x1'>The union denoted by <!-- l. 88 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>∪</mo></math>,
+      e.g. <!-- l. 88 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>∪</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+                                                                         
+
+                                                                         
+      </li>
+<li class='enumerate' id='x15-27004x2'>The intersection denoted by <!-- l. 89 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>∩</mo></math>,
+      e.g. <!-- l. 89 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>∩</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+      <!-- l. 89 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
+      and <!-- l. 89 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>T</mi></math>
+      are called disjoint if <!-- l. 89 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-bin'>∩</mo> <mi>T</mi> <mo class='MathClass-rel'>=</mo> <mi>∅</mi></mrow></math>
+      </li>
+<li class='enumerate' id='x15-27006x3'>The difference denoted by <!-- l. 90 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>∖</mo></math>,
+      e.g. <!-- l. 90 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>∖</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+      It is also called <span class='ecti-1200'>the complement of a subset </span><!-- l. 90 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>T</mi></math>
+      <span class='ecti-1200'>in a set </span><!-- l. 90 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>,
+      i.e. <!-- l. 90 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-bin'>∖</mo> <mi>T</mi></mrow></math>.
+      </li>
+<li class='enumerate' id='x15-27008x4'>The disjoint union denoted by <!-- l. 91 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>⊔</mo></math>,
+      e.g. <!-- l. 91 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>⊔</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>5</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+      </li>
+<li class='enumerate' id='x15-27010x5'>
+      <!-- l. 92 --><p class='noindent'>The Cartesian product denoted by
+      <!-- l. 92 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin'>×</mo></math>,
+      e.g.
+                                                                         
+
+                                                                         
+      </p><!-- tex4ht:inline --><!-- l. 95 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left'>
+<mtr><mtd class='align-odd' columnalign='right'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-bin'>×</mo><mo class='MathClass-open' stretchy='false'>{</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>}</mo> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>4</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>3</mn><mo class='MathClass-punc'>,</mo> <mn>5</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></mtd><mtd class='align-even'><mspace width='2em'></mspace></mtd><mtd class='align-label' columnalign='right'>
+</mtd></mtr></mtable></math>
+      <!-- l. 96 --><p class='noindent'>The product of a set with itself is often denoted as if it is a regular number, i.e.
+      <!-- l. 96 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-bin'>×</mo> <mi>A</mi> <mo class='MathClass-rel'>=</mo> <msup><mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></math>,
+      <!-- l. 96 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-bin'>×</mo> <mi>A</mi> <mo class='MathClass-bin'>×</mo> <mi>A</mi> <mo class='MathClass-rel'>=</mo> <msup><mrow><mi>A</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></math>,
+      etc.
+      </p></li>
+<li class='enumerate' id='x15-27012x6'>Quotient by an equivalence relation (more on this below).</li></ol>
+<!-- l. 100 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='relations-partitions-and-quotients'><a id='x15-280003.2'></a>Relations, partitions, and quotients</h4>
+      <ul class='itemize1'>
+      <li class='itemize'>
+      <!-- l. 102 --><p class='noindent'>A relation <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>R</mi></math>
+      on a set <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
+      is the subset <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>R</mi> <mo class='MathClass-rel'>⊂</mo> <mi>S</mi> <mo class='MathClass-bin'>×</mo> <mi>S</mi></mrow></math>.
+      We say that <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>a</mi></math>
+      and <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>b</mi></math>
+      are related by <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>R</mi></math>
+      and write <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi><mspace class='thickpace' width='0.28em'></mspace><mi>R</mi><mspace class='thickpace' width='0.28em'></mspace><mi>b</mi></mrow></math>
+      if <!-- l. 102 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-punc'>,</mo><mi>b</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>∈</mo> <mi>R</mi></mrow></math>.
+      </p><!-- l. 104 --><p class='noindent'>For instance, take
+                                                                         
+
+                                                                         
+      </p><!-- tex4ht:inline --><!-- l. 108 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left'>
+                  <mtr><mtd class='align-odd' columnalign='right'><mrow><mi>S</mi> <mo class='MathClass-rel'>=</mo></mrow></mtd>                  <mtd class='align-even'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>}</mo><mspace width='2em'></mspace></mrow></mtd>                                      <mtd class='align-label' columnalign='right'></mtd>                  <mtd class='align-label'><mrow>
+                  <mspace width='2em'></mspace></mrow></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mrow><mi>R</mi> <mo class='MathClass-rel'>=</mo></mrow></mtd>                  <mtd class='align-even'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc'>,</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mo class='MathClass-punc'>,</mo> <mn>3</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-rel'>⊂</mo> <mi>S</mi> <mo class='MathClass-bin'>×</mo> <mi>S</mi><mspace width='2em'></mspace></mrow></mtd>                  <mtd class='align-label' columnalign='right'></mtd>                  <mtd class='align-label'><mrow>
+<mspace width='2em'></mspace></mrow></mtd></mtr></mtable></math>
+      <!-- l. 109 --><p class='noindent'>We then say <!-- l. 109 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mspace class='thickpace' width='0.28em'></mspace><mi>R</mi><mspace class='thickpace' width='0.28em'></mspace><mn>2</mn></mrow></math>,
+      <!-- l. 109 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mspace class='thickpace' width='0.28em'></mspace><mi>R</mi><mspace class='thickpace' width='0.28em'></mspace><mn>3</mn></mrow></math>, and
+      <!-- l. 109 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>2</mn><mspace class='thickpace' width='0.28em'></mspace><mi>R</mi><mspace class='thickpace' width='0.28em'></mspace><mn>3</mn></mrow></math>.
+      Usually, the relations are denoted by a specific symbol; in this example, we would
+      use <!-- l. 109 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>R</mi> <mo class='MathClass-rel'>=</mo><mo class='MathClass-rel'>&lt;</mo></mrow></math>,
+      hence <!-- l. 109 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn> <mo class='MathClass-rel'>&lt;</mo> <mn>2</mn></mrow></math>
+      and so on.
+      </p></li>
+      <li class='itemize'>The prototypical relation is the diagonal of
+      <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-bin'>×</mo> <mi>S</mi></mrow></math>, i.e.
+      <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>R</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-punc'>,</mo><mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel'>|</mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>S</mi><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+      This is called an equality and denoted by
+      <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mo class='MathClass-rel'>=</mo></mrow></math>. Thus
+      <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi> <mo class='MathClass-rel'>=</mo> <mi>b</mi></mrow></math> is only
+      true if <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>a</mi></math> and
+      <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>b</mi></math> are the same
+      elements, i.e. <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-punc'>,</mo><mi>b</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> lie
+      in the diagonal of <!-- l. 110 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>S</mi> <mo class='MathClass-bin'>×</mo> <mi>S</mi></mrow></math>.
+      </li>
+      <li class='itemize'>
+      <!-- l. 111 --><p class='noindent'>A relation <!-- l. 111 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mo class='MathClass-rel'>∼</mo></mrow></math>
+      may (or may not) have following properties:
+           </p><ol class='enumerate1'>
+                                                                         
+
+                                                                         
+<li class='enumerate' id='x15-28002x1'>Reflexivity: <!-- l. 113 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>S</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>a</mi> <mo class='MathClass-rel'>∼</mo> <mi>a</mi></mrow></math>
+           </li>
+<li class='enumerate' id='x15-28004x2'>Symmetry: <!-- l. 114 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi><mo class='MathClass-punc'>,</mo><mi>b</mi> <mo class='MathClass-rel'>∈</mo> <mi>S</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>a</mi> <mo class='MathClass-rel'>∼</mo> <mi>b</mi> <mo class='MathClass-rel'>⇒</mo> <mi>b</mi> <mo class='MathClass-rel'>∼</mo> <mi>a</mi></mrow></math>
+           </li>
+<li class='enumerate' id='x15-28006x3'>Transitivity: <!-- l. 115 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi><mo class='MathClass-punc'>,</mo><mi>b</mi><mo class='MathClass-punc'>,</mo><mi>c</mi> <mo class='MathClass-rel'>∈</mo> <mi>S</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi> <mo class='MathClass-rel'>∼</mo> <mi>b</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin'>∧</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi>b</mi> <mo class='MathClass-rel'>∼</mo> <mi>c</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel'>⇒</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi> <mo class='MathClass-rel'>∼</mo> <mi>c</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math></li></ol>
+      <!-- l. 117 --><p class='noindent'>Examples: </p>
+           <ul class='itemize2'>
+           <li class='itemize'><!-- l. 119 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mo class='MathClass-rel'>&gt;</mo></mrow></math>
+           is not a reflexive relation.
+           </li>
+           <li class='itemize'><!-- l. 120 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mo class='MathClass-rel'>≥</mo></mrow></math>
+           is a reflexive but not symmetric relation.
+           </li>
+           <li class='itemize'>The relation <!-- l. 121 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>R</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-punc'>,</mo> <mn>2</mn><mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel'>|</mo><mi>a</mi> <mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-rel'>∈</mo> <mi>ℤ</mi> <mo class='MathClass-bin'>×</mo> <mi>ℤ</mi></mrow></math>
+           is a relation on <!-- l. 121 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ℤ</mi></math>
+           which is neither reflexive, nor symmetric, nor transitive.</li></ul>
+      </li></ul>
+<div class='footnotes'><!-- l. 38 --><p class='indent'>   <span class='footnote-mark'><a href='websitese9.html#fn1x3-bk'><sup class='textsuperscript'>1</sup></a></span><span class='ecrm-1000'>See </span><a class='url' href='https://books.google.com.tr/books?id=h4dNEAAAQBAJ'><span class='ectt-1000'>https://books.google.com.tr/books?id=h4dNEAAAQBAJ</span></a><span class='ecrm-1000'>.</span></p>
+<!-- l. 54 --><p class='noindent'><span class='footnote-mark'><a href='websitese9.html#fn2x3-bk'><sup class='textsuperscript'>2</sup></a></span><span class='ecrm-1000'>Set comprehension, or set abstraction means the way to build a set. See</span>
+<a class='url' href='https://en.wikipedia.org/wiki/Set-builder_notation'><span class='ectt-1000'>https://en.wikipedia.org/wiki/Set-builder_notation</span></a><span class='ecrm-1000'>.</span></p>
+<!-- l. 80 --><p class='noindent'><span class='footnote-mark'><a href='websitese9.html#fn3x3-bk'><sup class='textsuperscript'>3</sup></a></span><span class='ecrm-1000'>This differs from the notation and explanation of </span><span class='ecti-1000'>Algebra: Chapter 0 </span><span class='ecrm-1000'>(see page 3), but we
+</span><span class='ecrm-1000'>will stick to this notation instead.</span></p>                                             </div> <!-- l. 124 --><div class='crosslinks'><p class='noindent'>[<a href='websitese11.html'>next</a>]
+[<a href='websitese9.html'>prev</a>] [<a href='websitese9.html#tailwebsitese9.html'>prev-tail</a>] [<a href='websitese10.html'>front</a>] [<a href='websitech3.html#websitese10.html'>up</a>] </p></div>
+<!-- l. 124 --><p class='indent'>   <a id='tailwebsitese10.html'></a>  </p> 
 <div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
  
 </body>  
